@@ -38,10 +38,11 @@ trained_model.load_state_dict(torch.load('Trained Models/mask_detection_model.pt
 trained_model.eval()
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-test_transform_compose = transforms.Compose({
+test_transform_compose = transforms.Compose([
     transforms.Resize((320,320)),
     transforms.ToTensor(),
-})
+    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+])
 
 vs = VideoStream(src=0).start()
 time.sleep(1.0)
