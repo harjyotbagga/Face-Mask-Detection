@@ -46,6 +46,9 @@ Contributions are what make the open source community such an amazing place to b
 5. Open a Pull Request
 
 
+## Issues
+For any bugs, feature requests, discussions or comments please open an issue [here](https://github.com/harjyotbagga/face-mask-detection/issues)
+
 <div align="center">
 
 ### Made with ❤️
